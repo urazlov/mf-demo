@@ -1,0 +1,16 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { DATA_SERVICE_TOKEN } from '@ng-mf/shared-services';
+import { DynamicLoaderComponent } from '../dynamic/dynamic-loader.component';
+import { SecondPageService } from '../services/seconds.service';
+
+@Component({
+  standalone: true,
+  imports: [CommonModule, RouterModule, DynamicLoaderComponent],
+  providers: [{ provide: DATA_SERVICE_TOKEN, useClass: SecondPageService }],
+  selector: 'ng-mf-second-page',
+  template: `HELLO I AM SECOND PAGE
+    <ng-mf-dynamic-loader></ng-mf-dynamic-loader> `,
+})
+export class SecondPageComponent {}
