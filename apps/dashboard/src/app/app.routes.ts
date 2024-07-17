@@ -1,6 +1,7 @@
 import { Route } from '@angular/router';
 import { SecondPageComponent } from './second-page/second-page.component';
 import { FirstPageComponent } from './first-page/first-page.component';
+import { ThirdPageComponent } from './third-page/third-page.component';
 
 export const appRoutes: Route[] = [
   {
@@ -11,4 +12,8 @@ export const appRoutes: Route[] = [
     path: 'second',
     component: SecondPageComponent,
   },
+  {
+    path: 'third',
+    component: ThirdPageComponent
+  }
 ];
