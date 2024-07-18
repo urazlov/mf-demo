@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RemoteWithInputComponent } from '../remote-input/remote-input.component';
+import { RemoteWithInputComponent } from '../../components/remote-input/remote-input.component';
 
 @Component({
   standalone: true,

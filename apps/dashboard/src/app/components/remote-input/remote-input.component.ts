@@ -4,7 +4,7 @@ import {
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
-import { MFComponent } from '../dynamic/mf-component';
+import { MFComponent } from '../mf-component/mf-component';
 import { LoadRemoteModuleOptions } from '@angular-architects/module-federation';
 
 export type RemoteWithInputsProps = {

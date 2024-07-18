@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { DynamicLoaderWithInputsComponent } from '../dynamic/dynamic-loader-with-inputs.component';
+import { DynamicLoaderWithInputsComponent } from '../../components/dynamic/dynamic-loader-with-inputs.component';
 
 @Component({
   standalone: true,
