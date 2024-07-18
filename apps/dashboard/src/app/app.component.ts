@@ -1,17 +1,18 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DynamicLoaderComponent } from './dynamic/dynamic-loader.component';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, RouterModule, DynamicLoaderComponent],
+  imports: [CommonModule, RouterModule],
   selector: 'ng-mf-root',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <ul>
       <li><a routerLink="/">First</a></li>
       <li><a routerLink="/second">Second Page</a></li>
       <li><a routerLink="/third">Third Page</a></li>
+      <li><a routerLink="/fourth">Fourth Page</a></li>
     </ul>
     <router-outlet></router-outlet>
   `,
