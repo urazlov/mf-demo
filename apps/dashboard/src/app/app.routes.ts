@@ -1,8 +1,8 @@
 import { Route } from '@angular/router';
-import { SecondPageComponent } from './second-page/second-page.component';
-import { FirstPageComponent } from './first-page/first-page.component';
-import { ThirdPageComponent } from './third-page/third-page.component';
-import { FourthPageComponent } from './fourth-page/fourth-page.component';
+import { FirstPageComponent } from './pages/first-page/first-page.component';
+import { FourthPageComponent } from './pages/fourth-page/fourth-page.component';
+import { SecondPageComponent } from './pages/second-page/second-page.component';
+import { ThirdPageComponent } from './pages/third-page/third-page.component';
 
 export const appRoutes: Route[] = [
   {

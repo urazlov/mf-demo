@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { DATA_SERVICE_TOKEN } from '@ng-mf/shared-services';
-import { SecondPageService } from '../services/seconds.service';
-import { DynamicLoaderWithInputsComponent } from '../dynamic/dynamic-loader-with-inputs.component';
+import { SecondPageService } from '../../services/seconds.service';
+import { DynamicLoaderWithInputsComponent } from '../../components/dynamic/dynamic-loader-with-inputs.component';
 
 @Component({
   standalone: true,
