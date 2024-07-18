@@ -5,4 +5,6 @@ export interface DataService {
   getData(): Observable<any[]>;
 }
 
-export const DATA_SERVICE_TOKEN = new InjectionToken<DataService>('DATA_SERVICE_TOKEN');
+export const DATA_SERVICE_TOKEN = new InjectionToken<DataService>(
+  'DATA_SERVICE_TOKEN'
+);
