@@ -1,14 +1,14 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
   standalone: true,
   imports: [CommonModule],
   selector: 'ng-mf-remote-entry',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div *ngIf="show">
-      Component With Inputs
-      @for (item of items; track item) {
+      Component With Inputs @for (item of items; track item) {
       <li>{{ item }}</li>
       }
     </div>
