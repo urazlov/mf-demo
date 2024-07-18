@@ -1,23 +1,17 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { DynamicLoaderWithInputsComponent } from '../dynamic/dynamic-loader-with-inputs.component';
+import { RemoteWithInputComponent } from '../remote-input/remote-input.component';
 
 @Component({
   standalone: true,
-  imports: [DynamicLoaderWithInputsComponent],
+  imports: [RemoteWithInputComponent],
   providers: [],
   selector: 'ng-mf-second-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `HELLO I AM THIRD PAGE
     <button (click)="changeShow()">Change Show Input</button>
     <button (click)="changeItems()">Change Items Input</button>
-    <ng-mf-dynamic-loader-with-inputs
-      [inputs]="inputs"
-      [options]="{
-      type: 'module',
-      remoteEntry: 'http://localhost:4201/remoteEntry.mjs',
-      exposedModule: 'RemoteWithInputsComponent',
-    }"
-    ></ng-mf-dynamic-loader-with-inputs> `,
+    <ng-mf-remote-with-input [inputs]="inputs"></ng-mf-remote-with-input> `,
 })
 export class ThirdPageComponent {
   inputs = {
