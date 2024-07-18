@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { DynamicLoaderWithInputsComponent } from '../dynamic/dynamic-loader-with-inputs.component';
 import { RemoteWithInputComponent } from '../remote-input/remote-input.component';
 
 @Component({

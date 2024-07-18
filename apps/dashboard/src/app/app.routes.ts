@@ -15,10 +15,10 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'third',
-    component: ThirdPageComponent
+    component: ThirdPageComponent,
   },
   {
     path: 'fourth',
-    component: FourthPageComponent
-  }
+    component: FourthPageComponent,
+  },
 ];

@@ -8,9 +8,9 @@ import { MFComponent } from '../dynamic/mf-component';
 import { LoadRemoteModuleOptions } from '@angular-architects/module-federation';
 
 export type RemoteWithInputsProps = {
-    show: boolean;
-    items: string[];
-  }
+  show: boolean;
+  items: string[];
+};
 
 @Component({
   standalone: true,
